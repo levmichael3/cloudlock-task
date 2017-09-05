@@ -1,0 +1,5 @@
+ec2_tag_Environment: production
+ec2_tag_type: webservers
+ec2_sg: sg_prod
+ec2_instance_type: t2.micro
+ec2_image: ami-785db401

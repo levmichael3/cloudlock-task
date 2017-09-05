@@ -1,0 +1,9 @@
+---
+- name: Provision an instance following the task from CloudLock
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  pre_tasks:
+   - include_vars: env_vars/{{env}}.yml
+  roles:
+    - common

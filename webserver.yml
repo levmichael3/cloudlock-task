@@ -1,0 +1,8 @@
+---
+- name: Install Nginx webserver according to task
+  hosts: "tag_Environment_{{env}}"
+  gather_facts: false
+  pre_tasks:
+   - include_vars: env_vars/{{env}}.yml
+  tasks: 
+    - include: 'roles/webserver/tasks/main.yml'

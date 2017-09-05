@@ -1,0 +1,8 @@
+---
+- name: Update Security patches on OS and reboots if needed
+  hosts: "tag_Environment_{{env}}"
+  gather_facts: false
+  pre_tasks:
+   - include_vars: env_vars/{{env}}.yml
+  tasks: 
+    - include: 'roles/update-os/tasks/main.yml'

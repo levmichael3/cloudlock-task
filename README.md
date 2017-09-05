@@ -32,7 +32,7 @@ $ ENV=<environment>
 $ ansible-playbook -v -i localhost, -e "env=$ENV" provision.yml
 $ ansible-playbook -v -e "env=$ENV"  -e 'ansible_python_interpreter=/usr/bin/python3' update-os.yml
 $ ansible-playbook -v -e "env=$ENV"  -e 'ansible_python_interpreter=/usr/bin/python3' webserver.yml
-$ ansible-playbook  -e "env=$ENV"  -e 'ansible_python_interpreter=/usr/bin/python3' verify_nginx.yml
+$ ansible-playbook -v -e "env=$ENV"  -e 'ansible_python_interpreter=/usr/bin/python3' verify_nginx.yml
 
 ```
 

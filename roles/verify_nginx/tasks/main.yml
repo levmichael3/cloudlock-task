@@ -1,0 +1,7 @@
+---
+ - name: Browse to Nginx health page and verify if Nginx is up
+   action: uri url=http://{{ inventory_hostname }}/health return_content=yes
+   register: webpage
+
+ - fail: msg='service is not happy'
+   when: "'Everything works {{env}}' not in webpage.content"

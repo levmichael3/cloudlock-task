@@ -10,6 +10,11 @@ Task steps:
 
 # Comment
 - Static ami for Ubuntu 16.04 used
+- Added static pythin interpeter
+- Add pem key to ssh-add agent for SSH
+- Used only eu-west-1 region staticly for ease of work
+- Used roles for includes
+
  
 
 # Steps used for configurations

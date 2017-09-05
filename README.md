@@ -8,12 +8,14 @@ Task steps:
 3. Install nginx and enable on boot
 4. Verify service is up
 
+
 # Comment
 - Static ami for Ubuntu 16.04 used
 - Added static pythin interpeter
 - Add pem key to ssh-add agent for SSH
 - Used only eu-west-1 region staticly for ease of work
 - Used roles for includes
+
 
  
 
@@ -48,6 +50,8 @@ $ ansible-playbook -v -e "env=$ENV"  -e 'ansible_python_interpreter=/usr/bin/pyt
 
  - Add private subnets
  - Add Backends
+ - Add destroy tasks
+ - Add resources only if not exist (SG/VPC etc..)
  - .......
 
 License

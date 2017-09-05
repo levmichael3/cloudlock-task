@@ -15,6 +15,7 @@ Task steps:
 - Add pem key to ssh-add agent for SSH
 - Used only eu-west-1 region staticly for ease of work
 - Used roles for includes
+- Used Nginx code for guidance for installation [https://www.nginx.com/blog/installing-nginx-nginx-plus-ansible/] [Nginx blog]
 
 
  

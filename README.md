@@ -59,5 +59,3 @@ License
 
 FREE
 
-
-# cloudlock-task
